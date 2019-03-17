@@ -1,0 +1,556 @@
+/* montserrat font included */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500');
+
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+span, i, a{
+    display: block;
+}
+img {
+    max-width: 100%;
+    width: auto;
+    display: block;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+h1 {
+    color: #5b5b5b;
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 300;
+    letter-spacing: 0;
+    text-transform: capitalize;
+}
+h2 {
+    color: #4d4d4d;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: capitalize; 
+}
+h3 {
+    color: #666666;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: capitalize;
+}
+h4 {
+    color: #4d4d4d;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 300;
+    letter-spacing: 0;
+    text-transform: capitalize; 
+}
+h5 {
+    color: #808080;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: capitalize; 
+}
+h6 {
+    color: #666666;
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: capitalize;
+}
+p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 0;
+    text-transform: none;    
+}
+
+/*icons*/
+.icon {
+    display: inline-block;
+    vertical-align: top;
+}
+.icon-md {
+    width: 40px;
+    height: 40px;
+}
+.icon-lg {
+    width: 60px;
+    height: 60px;
+}
+.icon-back-arrow {
+    background: url("../images/back-arrow.png") no-repeat left top;
+}
+.icon-close {
+    background: url("../images/close-icon.png") no-repeat left top;
+}
+.icon-rupee-circle {
+    background: url("../images/rupees-icon-circle.png") no-repeat left top;
+}
+.icon-rupee {
+    background: url("../images/rupee-icon.png") no-repeat left top;
+}
+.icon-calendar {
+    background: url("../images/calendar-icon.png") no-repeat left top;
+}
+.list-block-item-link {
+    cursor: default;
+}
+
+/* header style */
+header {
+    padding: 10px 0;
+    background: #efefef;
+    -webkit-box-shadow: 0px 2px 10px 1px rgba(192,192,192,1);
+       -moz-box-shadow: 0px 2px 10px 1px rgba(192,192,192,1);
+            box-shadow: 0px 2px 10px 1px rgba(192,192,192,1);
+}
+.list-block-item {
+    display: inline-block;
+    vertical-align: middle;
+}
+.list-block-item .icon-back-arrow {
+    margin: 0 60px;
+    cursor: pointer;
+}
+.list-block-item .icon-close {
+    cursor: pointer;
+}
+nav .list-block-item:last-child {
+    position: absolute;
+    right: 60px;
+    top: 20px;
+}
+.header-logo-img {
+    max-width: 210px;
+}
+
+/*portfolio block*/
+.portfolio-block {
+    margin: 80px 0;
+    text-align: center;
+}
+.portfolio-block-heading h1 {
+    padding-bottom: 5px;
+}
+.portfolio-block-details {
+    padding: 80px 0;
+}
+.portfolio-block-details .list-block-item {
+    padding-right: 5%;
+    text-align: left;
+}
+.portfolio-block-details .list-block-item:last-child {
+    padding-right: 0;
+}
+.list-block-item-details {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+/*listing details*/
+.listing-block-chart {
+    display: inline-block;
+    position: relative;
+    width: 30%;
+}
+.listing-block-items-list {
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
+    text-align: left;
+    margin-left: 2%;
+}
+.listing-block-items-list .list-block-item {
+    position: relative;
+    width: 100%;
+    min-height: 80px;
+    margin-bottom: 10px;
+    border: 1px solid #d1e1de;
+    border-radius: 3px;
+}
+.listing-block-items-list .list-block-item.active {
+    border: 2px solid #e5e8e8;
+}
+.listing-block-items-list .list-block-item.active::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    height: 100%;
+    border-radius: 3px;
+    border-left: 6px solid #3a9d8a;
+}
+.listing-block-items-list .list-block-item-details {
+    padding: 15px 0px 15px 20px;
+    width: 80%;
+}
+.listing-block-items-list h6 {
+    text-align: right;
+    padding-right: 35px;
+}
+.list-block-item-details-figures {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-height: 80px;
+    padding: 0 12px;
+    height: 100%;
+    color: #fff;
+}
+.list-block-item-details-figures h3 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    font-size: 36px;
+    line-height: 40px;
+    color: #fff;
+}
+.list-terms {
+    padding: 15px 0 0;
+}
+.list-terms p {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+.list-terms p:nth-child(2) {
+    padding-right: 0;
+}
+.bullet {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10%;
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+}
+
+/*colors*/
+.bg-green-dark {
+    background: #34af97;
+}
+.bg-green-light {
+    background: #2ebea3;
+}
+.bg-violet-light {
+    background: #42617a;
+}
+.txtcolor-green {
+    color: #12d6b0;
+}
+.txtcolor-violet {
+    color: #425b77;
+}
+
+/*circle*/
+.pie-chart {
+    height: 270px;
+    width: 270px;
+    margin: 0 auto;
+    border: 25px solid;
+    border-radius: 50%;
+    border-color:  #425b77 #425b77 #13b294 #13b294;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+.pie-chart.quarter-share {
+    position: relative;
+}
+.quarter-share::before {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: -35px;
+    height: 270px;
+    width: 270px;
+    margin: 0 auto;
+    border: 35px solid;
+    border-radius: 50%;
+    border-color:  transparent transparent transparent #13b294;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    opacity: .5;
+}
+.pie-chart-label {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%) rotate(-45deg);
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+    -moz-transform: translateY(-50%) rotate(-45deg);
+    -ms-transform: translateY(-50%) rotate(-45deg);
+}
+.pie-chart-label span {
+    font-size: 35px;
+    line-height: 36px;
+}
+.pie-chart-label span:first-child {
+    padding-bottom: 20px;
+}
+.listing-block-chart h6 {
+    text-align: left;
+    padding: 10px;
+}
+
+/*buttons*/
+.primary-btn {
+    display: inline-block;
+    margin: 40px auto;
+    position: relative;
+    width: auto;
+    padding: 25px 60px;
+    font-size: 30px;
+    line-height: 34px;
+    background: #3ad7b9;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(179,177,179,1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(179,177,179,1);
+    box-shadow: 0px 0px 6px 0px rgba(179,177,179,1);
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.primary-btn:hover {
+    background: #3dc7ad;
+    transition: .5s all ease-in;
+    -webkit-transition: .5s all ease-in;
+    -moz-transition: .5s all ease-in;
+    -ms-transition: .5s all ease-in;
+}
+
+
+/*media queries*/
+@media screen and (max-width: 1350px) {
+    .portfolio-block-details .list-block-item {
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    h2 {
+        font-size: 43px;
+        line-height: 47px;
+    }
+    .portfolio-block-details .list-block-item-details {padding: 0 0 30px 0}
+}
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 0 15px;
+    }
+    .list-block-item .icon-back-arrow {
+        margin: 0 30px;
+        background-size: 100%;
+    }
+    .list-block-item .icon-close {
+        background-size: 100%;
+    }
+    .icon-md {
+        width: 30px;
+        height: 30px;
+    }
+    nav .list-block-item:last-child {
+        right: 30px;
+    }
+    .header-logo-img {
+        max-width: 175px;
+    }
+    h1 {
+        font-size: 42px;
+        line-height: 46px;
+    }
+    .portfolio-block-heading h1 {
+        padding-bottom: 0;
+    }
+    .portfolio-block-details .list-block-item-details {
+        padding: 0 0 30px 15px;
+    }
+    .portfolio-block-details {
+        padding: 50px 0;
+    }
+    .portfolio-block-details .list-block-item {
+        display: block;
+        width: 100%;
+        padding: 0 0 30px 0;
+    }
+    .listing-block-chart {
+        display: block;
+        width: 88%;
+        margin: 0 auto;
+    }
+    .listing-block-chart h6 {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .listing-block-items-list {
+        display: block;
+        width: 100%;
+        margin: 30px auto;
+    }
+    .primary-btn {
+        padding: 20px 45px;
+        margin: 0 auto;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .list-block-item-details-figures h3 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+    .icon-rupee-circle, .icon-calendar, .icon-rupee {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    h1 {
+        font-size: 35px;
+        line-height: 39px;
+    }
+    h2 {
+        font-size: 38px;
+        line-height: 42px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    h4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .list-block-item-details-figures h3 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .portfolio-block-details .list-block-item {
+        padding: 0;
+    }
+    .listing-block-items-list .list-block-item-details {
+        width: auto;
+        display: block;
+        padding: 15px 20px 0px 20px;
+    }
+    .list-block-item-details-figures {
+        position: relative;
+        margin: 20px;
+        padding: 10px;
+        min-height: auto;
+    }
+    .list-block-item-details-figures h3 {
+        transform: none;
+        top: auto;
+        text-align: center;
+    }
+    .list-terms p {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .bullet {
+        margin: 0 5%;
+    }
+    .listing-block-items-list h6 { 
+        padding-right: 0;
+    }
+    .listing-block-items-list {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:480px)  {
+    .pie-chart {
+        width: 180px;
+        height: 180px;
+        border: 16px solid;
+        border-color: #425b77 #425b77 #13b294 #13b294;
+    }
+    .quarter-share::before {
+        width: 180px;
+        height: 180px;
+        top: -22px;
+        left: -22px;
+        border: 22px solid;
+        border-color: transparent transparent transparent #13b294;
+    }
+    .pie-chart-label span {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .list-block-item .icon-back-arrow {
+        margin: 0 10px 0 15px;
+    }
+    .primary-btn {
+        padding: 18px 30px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .header-logo-img {
+        max-width: 150px;
+    }
+    nav .list-block-item:last-child {
+        right: 15px;
+        top: 15px;
+    }
+    .portfolio-block {
+        margin: 50px 0;
+    }
+}
